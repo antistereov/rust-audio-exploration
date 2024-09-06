@@ -1,14 +1,19 @@
-// Prevents additional console window on Windows in release, DO NOT REMOVE!!
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
-#[tauri::command]
-fn greet(name: &str) -> String {
-  format!("Hello, {}", name)
-}
+mod ui;
+mod synth;
+mod audio_handler;
 
 fn main() {
+
   tauri::Builder::default()
-      .invoke_handler(tauri::generate_handler![greet])
-    .run(tauri::generate_context!())
-    .expect("error while running tauri application");
+      .manage(std::sync::Mutex::new(audio_handler::audio_handler::AudioHandler::new()))
+      .invoke_handler(tauri::generate_handler![
+          ui::tauri_interface::greet,
+          ui::tauri_interface::switch_host,
+          ui::tauri_interface::select_output_device,
+          ui::tauri_interface::list_output_devices,
+      ])
+      .run(tauri::generate_context!())
+      .expect("error while running tauri application");
 }
