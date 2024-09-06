@@ -1,0 +1,8 @@
+<p-dropdown
+  [options]="devices"
+  [(ngModel)]="selectedDevice"
+  optionLabel="name"
+  [style]="{'width':'300px'}"
+  placeholder="Select an audio device"
+  (onChange)="onDeviceChange($event.value)">
+</p-dropdown>

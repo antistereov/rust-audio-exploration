@@ -1,1 +1,1 @@
-pub(crate) mod tauri_interface;
+pub(crate) mod audio_settings;
