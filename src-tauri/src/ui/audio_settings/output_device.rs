@@ -1,4 +1,4 @@
-use crate::audio_handler::{audio_handler::AudioHandler, audio_handler_error::AudioHandlerError, hosts::WindowsHost};
+use crate::audio_handler::{audio_handler::AudioHandler, audio_handler_error::AudioHandlerError};
 use std::sync::Mutex;
 
 #[tauri::command]
@@ -7,7 +7,7 @@ pub fn get_current_output_device_name(audio_handler: tauri::State<'_, Mutex<Audi
 }
 
 #[tauri::command]
-pub fn list_available_output_devices(audio_handler: tauri::State<'_, Mutex<AudioHandler>>) -> Vec<String> {
+pub fn list_available_output_devices(audio_handler: tauri::State<'_, Mutex<AudioHandler>>) -> Result<Vec<String>, AudioHandlerError> {
     audio_handler.lock().unwrap().list_available_output_devices()
 }
 

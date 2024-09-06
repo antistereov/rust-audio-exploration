@@ -1,4 +1,4 @@
-use tauri::InvokeError;
+use tauri::ipc::InvokeError;
 use thiserror::Error;
 
 #[derive(Error, Debug)]
