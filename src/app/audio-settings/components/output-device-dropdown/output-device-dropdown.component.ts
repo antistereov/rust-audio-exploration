@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { AudioSettingsService } from '../../services/audio-settings.service';
+import { OutputDeviceService } from '../../services/output-device.service';
 import { DropdownModule } from 'primeng/dropdown';
 
 @Component({
@@ -14,7 +14,7 @@ export class OutputDeviceDropdown implements OnInit {
   devices: string[] = [];
   selectedDevice: string | null = null;
 
-  constructor(private audioSettingsService: AudioSettingsService) {}
+  constructor(private outputDeviceService: OutputDeviceService) {}
 
   ngOnInit() {
     this.loadDevices();
@@ -22,22 +22,22 @@ export class OutputDeviceDropdown implements OnInit {
 
   async loadDevices() {
     try {
-      this.devices = await this.audioSettingsService.listOutputDevices();
+      this.devices = await this.outputDeviceService.listOutputDevices();
       this.selectedDevice =
-        await this.audioSettingsService.getCurrentDeviceName();
+        await this.outputDeviceService.getCurrentDeviceName();
     } catch (err) {
       console.error('Error loading devices:', err);
     }
   }
 
   async onDeviceChange(deviceName: string) {
-    await this.audioSettingsService
+    await this.outputDeviceService
       .selectOutputDevice(deviceName)
       .catch((err) => {
         console.error('Error selecting device:', err);
       });
 
     this.selectedDevice =
-      await this.audioSettingsService.getCurrentDeviceName();
+      await this.outputDeviceService.getCurrentDeviceName();
   }
 }
