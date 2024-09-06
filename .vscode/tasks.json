@@ -64,6 +64,22 @@
       "label": "ui:build",
       "type": "shell",
       "command": ["ng", "build"],
+      "problemMatcher": [
+        {
+          "owner": "angular-cli",
+          "pattern": [
+            {
+              "regexp": "^(?:ERROR in )?(.+):(\\d+):(\\d+) - (error|warning|info) (TS\\d+): (.+)$",
+              "file": 1,
+              "line": 2,
+              "column": 3,
+              "severity": 4,
+              "code": 5,
+              "message": 6
+            }
+          ]
+        }
+      ]
     }
   ]
 }
