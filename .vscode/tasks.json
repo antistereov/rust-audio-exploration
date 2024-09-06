@@ -41,20 +41,29 @@
     {
       "label": "ui:dev",
       "type": "shell",
-      // `dev` keeps running in the background
-      // ideally you should also configure a `problemMatcher`
-      // see https://code.visualstudio.com/docs/editor/tasks#_can-a-background-task-be-used-as-a-prelaunchtask-in-launchjson
+      "problemMatcher": [
+        {
+          "owner": "angular-cli",
+          "pattern": [
+            {
+              "regexp": "^(?:ERROR in )?(.+):(\\d+):(\\d+) - (error|warning|info) (TS\\d+): (.+)$",
+              "file": 1,
+              "line": 2,
+              "column": 3,
+              "severity": 4,
+              "code": 5,
+              "message": 6
+            }
+          ]
+        }
+      ],
       "isBackground": true,
-      // change this to your `beforeDevCommand`:
       "command": ["ng", "serve"],
-      // "args": ["dev"]
     },
     {
       "label": "ui:build",
       "type": "shell",
-      // change this to your `beforeBuildCommand`:
-      "command": "ng serve",
-      "args": ["build"]
+      "command": ["ng", "build"],
     }
   ]
 }
