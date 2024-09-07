@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { OutputDeviceService } from '../../services/output-device.service';
 import { DropdownModule } from 'primeng/dropdown';
+import { debug, error } from '@tauri-apps/plugin-log';
 
 @Component({
   selector: 'output-device-dropdown',
@@ -22,11 +23,15 @@ export class OutputDeviceDropdown implements OnInit {
 
   async loadDevices() {
     try {
-      this.devices = await this.outputDeviceService.listOutputDevices();
-      this.selectedDevice =
-        await this.outputDeviceService.getCurrentDeviceName();
+      this.devices = await this.outputDeviceService.listAvailableOutputDevices();
+      debug(`Available output devices:`)
+      this.devices.forEach((device, index) => {
+        debug(`  ${index + 1}: ${device}`)
+      });
+      this.selectedDevice = await this.outputDeviceService.getCurrentDeviceName();
+      debug(`Current output device: ${this.selectedDevice}`)
     } catch (err) {
-      console.error('Error loading devices:', err);
+      error(`Error loading devices: ${err}`);
     }
   }
 
@@ -34,10 +39,10 @@ export class OutputDeviceDropdown implements OnInit {
     await this.outputDeviceService
       .selectOutputDevice(deviceName)
       .catch((err) => {
-        console.error('Error selecting device:', err);
+        error(`Error selecting device: ${err}`);
       });
 
-    this.selectedDevice =
-      await this.outputDeviceService.getCurrentDeviceName();
+    this.selectedDevice = await this.outputDeviceService.getCurrentDeviceName();
+    debug(`Output device changed to: ${this.selectedDevice}`)
   }
 }
