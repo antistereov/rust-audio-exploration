@@ -35,27 +35,13 @@ I develop in [VS Code](https://code.visualstudio.com/). You can find a guide on 
 
 #### VS Code Extensions
 
-- Rust
-  - [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
-  - [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode)
-  - [Rust Syntax](https://marketplace.visualstudio.com/items?itemName=dustypomerleau.rust-syntax)
-- HTML
-  - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
-  - [HTML Boilerplate](https://marketplace.visualstudio.com/items?itemName=sidthesloth.html5-boilerplate)
-  - [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
-- TypeScript
-  - [Angular Language Service](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template)
-  - [Angular Snippets (Version 18)](https://marketplace.visualstudio.com/items?itemName=johnpapa.Angular2)
-- Debugging
-  - [CodeLLDB](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb)
-- Quality of life
-  - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
-- Theme
-  - [Tokyo Night](https://marketplace.visualstudio.com/items?itemName=enkia.tokyo-night)
-- Misc
-  - [Markdown All In One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
-  - [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager)
-  - [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
+- Rust: [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer), [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode), [Rust Syntax](https://marketplace.visualstudio.com/items?itemName=dustypomerleau.rust-syntax)
+- HTML: [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag), [HTML Boilerplate](https://marketplace.visualstudio.com/items?itemName=sidthesloth.html5-boilerplate), [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css),
+- TypeScript: [Angular Language Service](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template), [Angular Snippets (Version 18)](https://marketplace.visualstudio.com/items?itemName=johnpapa.Angular2)
+- Debugging: [CodeLLDB](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb)
+- Quality of life: [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
+- Theme: [Tokyo Night](https://marketplace.visualstudio.com/items?itemName=enkia.tokyo-night)
+- Misc: [Markdown All In One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one), [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager), [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
 
 ### Backend
 
