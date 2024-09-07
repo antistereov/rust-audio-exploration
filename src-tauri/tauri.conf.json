@@ -4,7 +4,7 @@
   "build": {
     "beforeBuildCommand": "ng build",
     "beforeDevCommand": "ng serve",
-    "devUrl": "localhost:4200",
+    "devUrl": "http://localhost:4200",
     "frontendDist": "../dist"
   },
   "app": {
