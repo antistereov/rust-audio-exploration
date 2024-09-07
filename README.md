@@ -54,8 +54,11 @@ I develop in [VS Code](https://code.visualstudio.com/). You can find a guide on 
 - Rust
   - [tauri](https://tauri.app/) (v2.0.0-rc): Frontend framework that compiles to HTML, JS, CSS.
 - TypeScript
-  - [Angular](https://angular.dev/) (v18): single-page web application framework
-  - [PrimeNG](https://primeng.org/): Angular component library
+  - [Angular](https://angular.dev/) (v18): Single-page web application framework.
+  - [PrimeNG](https://primeng.org/): Angular component library.
+  - [webaudio-controls](https://g200kg.github.io/webaudio-controls/docs/index.html): Javascript library to display the GUI components used in Web Music Applications.
+- Assets
+  - [WebKnobMan](https://www.g200kg.com/en/webknobman/gallery.php): Gallery and editor for audio assets.
 
 ## Resources
 
