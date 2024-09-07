@@ -4,7 +4,6 @@ use super::audio_handler_error::AudioHandlerError;
 
 pub trait Host {
     fn from_cpal_host_id(host_id: cpal::HostId) -> Self;
-    fn to_cpal_host(&self) -> cpal::HostId;
 }
 
 #[derive(Serialize, Deserialize)]
@@ -17,13 +16,6 @@ impl Host for WindowsHost {
         match host_id {
             cpal::HostId::Asio => WindowsHost::ASIO,
             cpal::HostId::Wasapi => WindowsHost::WASAPI,
-        }
-    }
-
-    fn to_cpal_host(&self) -> cpal::HostId {
-        match self {
-            WindowsHost::ASIO => cpal::HostId::Asio,
-            WindowsHost::WASAPI => cpal::HostId::Wasapi,
         }
     }
 }
