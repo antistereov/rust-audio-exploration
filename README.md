@@ -1,8 +1,22 @@
 # RustAudioExploration <!-- omit in toc -->
 
-This project is a try to get into digital sound synthesis. I use this project as my first project to learn Rust.
-Fortunately, I came across the [tauri](https://tauri.app/) - a library for building user interfaces in Rust that compiles to HTML, JS and CSS.
-Since I anyway wanted to learn frontend web development at some point, I decided that is the best chance to combine my plans.
+This project is a try to get into digital sound synthesis, learn [Rust](https://www.rust-lang.org/) and frontend web development using [Angular](https://angular.dev/).
+
+In my real life, I'm actually a musician and I have always enjoyed electronic music and digital sound synthesis quite a lot - from a user perspective.
+I knew that at some point, I want to get into the fundamentals of digital sound synthesis - and even sound synthesis in general but I had no idea of how and when.
+At the sime, I've wanted to learn Rust but never came up with a idea.
+
+Fortunately, I watching [this](https://youtu.be/iA6wRgwl7k0) excellent video by [Sebastian Lauge](https://www.youtube.com/@SebastianLague) (I highly recommend watching all of his videos if you're into coding!) it was quite obvious how I can achieve all of my projects at the same time. I will build my own synthesizer in Rust.
+
+Another thing, I've always wanted to do (since other projects forced me to do it) was frontend web development. So I was blown away after I came across [tauri](https://tauri.app/). This way I can build my frontend using [Angular](https://angular.dev/) (this is used by the frontend guys at the company that I work at, so I thought they can help me here), my backend using Rust and get into sound synthesis while working on this project.
+
+Please don't take this project too seriously. It's just a fun side project for me. I'm happy for any tips, tricks and comments on my work!
+
+If you want to check out my music:
+
+- [Spotify](https://open.spotify.com/artist/7sqTmMbUpkrMB4thBUrah7?si=o70wji4GTDaF-tuC-Bh9YA)
+- [YouTube](https://www.youtube.com/@antistereov)
+- [Bandcamp](https://stereov.bandcamp.com/follow_me)
 
 ## Table of Contents <!-- omit in toc -->
 
