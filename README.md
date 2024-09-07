@@ -4,7 +4,7 @@ This project is a try to get into digital sound synthesis, learn [Rust](https://
 
 In my real life, I'm actually a musician and I have always enjoyed electronic music and digital sound synthesis quite a lot - from a user perspective.
 I knew that at some point, I want to get into the fundamentals of digital sound synthesis - and even sound synthesis in general but I had no idea of how and when.
-At the sime, I've wanted to learn Rust but never came up with a idea.
+At the sime, I've wanted to learn Rust but never came up with a project idea.
 
 Fortunately, I watching [this](https://youtu.be/iA6wRgwl7k0) excellent video by [Sebastian Lauge](https://www.youtube.com/@SebastianLague) (I highly recommend watching all of his videos if you're into coding!) it was quite obvious how I can achieve all of my projects at the same time. I will build my own synthesizer in Rust.
 
