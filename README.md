@@ -6,9 +6,9 @@ In my real life, I'm actually a musician and I have always enjoyed electronic mu
 I knew that at some point, I want to get into the fundamentals of digital sound synthesis - and even sound synthesis in general but I had no idea of how and when.
 At the sime, I've wanted to learn Rust but never came up with a project idea.
 
-Fortunately, I watching [this](https://youtu.be/iA6wRgwl7k0) excellent video by [Sebastian Lauge](https://www.youtube.com/@SebastianLague) (I highly recommend watching all of his videos if you're into coding!) it was quite obvious how I can achieve all of my projects at the same time. I will build my own synthesizer in Rust.
+Fortunately, after watching [this](https://youtu.be/iA6wRgwl7k0) excellent video by [Sebastian Lauge](https://www.youtube.com/@SebastianLague) (I highly recommend watching all of his videos if you're into coding!) it became quite obvious to me how I can achieve all of my goals at the same time. I will build my own synthesizer using Rust.
 
-Another thing, I've always wanted to do (since other projects forced me to do it) was frontend web development. So I was blown away after I came across [tauri](https://tauri.app/). This way I can build my frontend using [Angular](https://angular.dev/) (this is used by the frontend guys at the company that I work at, so I thought they can help me here), my backend using Rust and get into sound synthesis while working on this project.
+Another thing I've always wanted to do was frontend web development (since other projects forced me to do it). So I was blown away after I came across [tauri](https://tauri.app/). This way I can build my frontend using [Angular](https://angular.dev/) (this is used by the frontend guys at the company that I work at, so I thought they can help me here), my backend using Rust and get into sound synthesis while working on this project.
 
 Please don't take this project too seriously. It's just a fun side project for me. I'm happy for any tips, tricks and comments on my work!
 
