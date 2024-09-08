@@ -1,5 +1,5 @@
 <h2>Audio Settings</h2>
 <p>Select Host</p>
-<app-host-dropdown></app-host-dropdown>
+<rae-audio-host-dropdown #audioHost (hostChanged)="onHostChanged($event)"></rae-audio-host-dropdown>
 <p>Select Output Device</p>
-<output-device-dropdown></output-device-dropdown>
+<rae-output-device-dropdown #outputDevice></rae-output-device-dropdown>
