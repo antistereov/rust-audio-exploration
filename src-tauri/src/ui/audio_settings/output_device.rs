@@ -3,7 +3,7 @@ use std::sync::Mutex;
 
 #[tauri::command]
 pub fn get_current_output_device_name(audio_handler: tauri::State<Mutex<AudioHandler>>) -> Option<String> {
-    audio_handler.lock().unwrap().get_current_device_name()
+    audio_handler.lock().unwrap().get_current_output_device_name()
 }
 
 #[tauri::command]

@@ -3,9 +3,6 @@ use thiserror::Error;
 
 #[derive(Error, Debug)]
 pub enum AudioHandlerError {
-    #[error("Host '{0}' is not supported on Windows")]
-    NoSuchWindowsHost(String),
-
     #[error("Failed to switch host: {0}")]
     HostSwitchError(String),
 
