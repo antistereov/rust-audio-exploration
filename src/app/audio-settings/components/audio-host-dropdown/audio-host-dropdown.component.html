@@ -1,1 +1,7 @@
-<p>host-dropdown works!</p>
+<p-dropdown
+    [options]="availableHosts"
+    [(ngModel)]="audioHost"
+    [style]="{'width':'300px'}"
+    placeholder="Select an audio host"
+    (onChange)="onAudioHostChange($event.value)">
+</p-dropdown>

@@ -7,7 +7,6 @@ pub fn get_current_host(audio_handler: tauri::State<'_, Mutex<AudioHandler>>) ->
 }
 
 #[tauri::command]
-pub fn switch_host(audio_handler: tauri::State<'_, Mutex<AudioHandler>>, host: String) -> Result<(), AudioHandlerError> {
-    let windows_host = WindowsHost::from_string(&host)?;
-    audio_handler.lock().unwrap().switch_host(windows_host)
+pub fn switch_host(audio_handler: tauri::State<'_, Mutex<AudioHandler>>, host: WindowsHost) -> Result<(), AudioHandlerError> {
+    audio_handler.lock().unwrap().switch_host(host)
 }
