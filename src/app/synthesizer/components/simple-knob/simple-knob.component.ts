@@ -1,7 +1,7 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @Component({
-  selector: 'simple-knob',
+  selector: 'rae-simple-knob',
   standalone: true,
   imports: [],
   templateUrl: './simple-knob.component.html',
