@@ -32,7 +32,7 @@ If you want to check out my music:
 
 ### Development
 
-I develop in [VS Code](https://code.visualstudio.com/). You can find a guide on how to set up debugging for tauri right [here](https://tauri.app/v1/guides/debugging/vs-code/).
+I use [VS Code](https://code.visualstudio.com/). You can find a guide on how to set up debugging for tauri right [here](https://tauri.app/v1/guides/debugging/vs-code/).
 
 #### VS Code Extensions
 
