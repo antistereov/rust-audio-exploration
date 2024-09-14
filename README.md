@@ -16,7 +16,7 @@ If you want to check out my music:
 
 - [Spotify](https://open.spotify.com/artist/7sqTmMbUpkrMB4thBUrah7?si=o70wji4GTDaF-tuC-Bh9YA)
 - [YouTube](https://www.youtube.com/@antistereov)
-- [Bandcamp](stereov.bandcamp.com/follow_me)
+- [Bandcamp](https://stereov.bandcamp.com/follow_me)
 
 ## Table of Contents <!-- omit in toc -->
 
